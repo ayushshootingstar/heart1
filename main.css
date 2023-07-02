@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(17, 11, 12);
+    padding: 0;
+    margin: 0;
+}
+
+.heart{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+i{
+    color: rgb(61, 122, 213);
+    font-size:100px;
+    text-shadow:0 0 10px rgb(129, 54, 214), 0 0 50px rgb(223, 12, 57);
+    animation: heartbeat 0.9s infinite;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1.10);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    60%{
+        transform: scale(2);
+    }
+}
